@@ -1,0 +1,151 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffc9b9;
+    color: #2C6E49;
+}
+/*titulo*/
+
+
+/*HEADER*/
+header {
+    background-color: #d68c45;
+    color: #fefee3;
+    width: 100%;
+    height: 256px;
+    grid-area: header;
+}
+
+h1{
+    font-size: 3rem;
+    color: #fefee3;
+    grid-area: h1;
+    text-align: center;
+}
+
+.iconoHome {
+    margin: 25px 0 0 10px;
+    grid-area: iconoHome;
+    width: 50px;
+    transition: all 1.1s;
+}
+.iconoHome:hover{
+    transform: scale(1.5);
+    -webkit-transform:  scale(1.5);
+    -o-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+}
+/* Barra de navegación*/
+.navbar-modificada{
+    background-color: #d68c45;
+    color: #2C6E49;
+    font-weight: bold;
+    justify-content: center!important;
+}
+.dropdown-menu-modif{
+    background-color: #fefee3;
+    color: #2C6E49;
+}
+.navbarBotones li{
+    border: #2C6E49 double 5px;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color:#fefee3;
+    margin: 16px 16px;
+    padding: 0.6em;
+}
+.navbarBotones li a{
+    color: #d68c45;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbarBotones li:hover{
+    background-color:#ffc9b9;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.nav-oculta{
+    background-color: #d68c45;
+    color: #fefee3;
+    opacity: 50%;
+    display: none;
+}
+
+
+/*carrousel*/
+.imagen-carousel{
+    height: 400px;
+}
+.textoCarousel{
+    color: black;
+}
+
+.section__index{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+/*footer*/
+.contenedorFooter{
+    background-color: #d68c45;
+}
+.links-footer{
+    text-decoration: none;
+    color: #fefee3;
+}
+.links-footer:hover{
+    background-color:#ffc9b9;
+    color: #fefee3;
+
+}
+
+@media (max-width: 576px){
+    .section__index{
+        display: inline;
+    }
+    .links-footer{
+        display: none;
+    }
+    .nav-oculta{
+        display: block;
+    }
+
+}
+/* page nosotros*/
+.container-nosotros{
+    display: flex;
+}
+.section__nosotros--titulo{
+    font-size: 40px;
+    padding: 25px;
+}
+
+.section__valores--titulo{
+    font-size: 40px;
+    padding: 25px;
+}
+
+.text__container--nosotros p{
+    font-size: 24px;
+    width: 100%;
+}
+
+.image__container--nosotros{
+    width: 600px;
+    height: 500px;
+}
+.image__container--nosotros img{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+.text__container--nosotros{
+    width: 600px;
+    height: 500px;
+}
+
+
+
